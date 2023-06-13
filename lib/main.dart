@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.deepPurple))
         ),
         appBarTheme: AppBarTheme(
-          elevation: 0,
+          elevation: 1,
         )
       ),
       home: const Homepage()
