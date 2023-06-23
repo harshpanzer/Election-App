@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project1/homepage.dart';
+
+import 'package:project1/pages/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,20 +13,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: Colors.deepPurple,
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.deepPurple))
-        ),
-        appBarTheme: AppBarTheme(
-          elevation: 1,
-        )
-      ),
-      home: const Homepage()
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+            brightness: Brightness.dark,
+            primaryColor: Colors.deepPurple,
+            elevatedButtonTheme: ElevatedButtonThemeData(
+                style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all(Colors.deepPurple))),
+            appBarTheme: AppBarTheme(
+              elevation: 1,
+            )),
+        home: const Home());
   }
 }
-
