@@ -42,7 +42,7 @@ router.post('/sendotp', (req, res) => {
   }
 
   // Format the phone number with the country code
-  const phoneNumber = `${PhoneNumber}`; // Assuming the country code is 91 for India
+  const phoneNumber = `+91${PhoneNumber}`; // Assuming the country code is 91 for India
 
   const otp = generateOTP();
 
