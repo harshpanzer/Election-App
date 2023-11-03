@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:project1/pages/home.dart';
 import 'package:project1/pages/login_screen.dart';
+import 'package:project1/pages/otpscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +27,6 @@ class MyApp extends StatelessWidget {
             appBarTheme: AppBarTheme(
               elevation: 1,
             )),
-        home: const LoginScreen());
+        home: const Home());
   }
 }
